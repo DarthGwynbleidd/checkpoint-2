@@ -1,9 +1,10 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Game = (props) => {
     return (
         <div>
-            {props.game.name}
+            <NavLink to={`/games/${props.game.id}`}>{props.game.name}</NavLink>
         </div>
     );
 };
